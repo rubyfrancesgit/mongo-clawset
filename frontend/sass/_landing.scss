@@ -1,0 +1,54 @@
+.landing {
+    width: 100vw;
+    min-height: 50vh;
+    @include center;
+    flex-direction: column;
+    background: #FFE3B8;
+    background: -webkit-radial-gradient(circle farthest-corner at center center, #FFE3B8 0%, #FFCBEA 100%);
+    background: -moz-radial-gradient(circle farthest-corner at center center, #FFE3B8 0%, #FFCBEA 100%);
+    background: radial-gradient(circle farthest-corner at center center, #FFE3B8 0%, #FFCBEA 100%);
+    margin-bottom: 2rem;
+
+    &__heading {
+        @include p-text;
+        line-height: 3.5rem;
+        font-weight: lighter;
+        font-size: 3rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    &__btn {
+        @include btn;
+    }
+}
+
+.result-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    @include center;
+}
+
+.card {
+    height: 33rem;
+    border: none;
+    margin: 1rem;
+
+
+    &__img {
+        width: 18rem;
+        height: 18rem;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    &__heading {
+        @include p-text;
+    }
+
+    &__p {
+        @include p-text;
+        font-weight: lighter;
+    }
+}

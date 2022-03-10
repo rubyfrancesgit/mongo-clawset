@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- google fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+        <link href="https://fonts.googleapis.com/css2?family=Lexend+Peta:wght@100;400&family=Roboto:wght@100;300;400;500;700&family=Shrikhand&display=swap" rel="stylesheet">
+
+        <title>Amazon Salon</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+
+    <body>
+
+      <nav class="nav">
+        <h1 class="nav__heading" id="logo">Clawset</h1>
+
+        <ul class="nav__ul">
+          <li class="nav__li" id="addProductNav">Add product</li>
+          <li class="nav__li" id="updateProductNav">Update product</li>
+          <li class="nav__li" id="deleteProductNav">Delete product</li>
+        </ul>
+      </nav>
+
+      <div class="landing" id="landing" style="padding: 10rem;">
+        <h1 class="landing__heading">Check out our range of funky manicures</h1>
+
+        <button class="landing__btn" id="viewProducts" type="button">View products</button>
+      </div>
+
+      <div class="result-container row" id="result"></div>
+      
+      <div class="add-product" id="addProductForm">
+          <form>
+              <h1 class="add-product__heading">Add product</h1>
+              <div class="form-group">
+                <label class="add-product__label">Product name</label>
+                <input type="text" class="add-product__input form-control" id="nameInput"  placeholder="Name..">
+              </div>
+
+              <div class="form-group">
+                <label class="add-product__label">Price</label>
+                <input type="number" class="add-product__input form-control" id="priceInput" placeholder="Price...">
+              </div>
+
+              <div class="form-group">
+                  <label class="add-product__label">Image</label>
+                  <input type="text" class="add-product__input form-control" id="ImgUrlInput" placeholder="Image url...">
+              </div>
+
+              <button type="submit" id="addProduct" class="add-product__btn btn btn-primary">Add product</button>
+            </form>
+      </div>
+
+      <div class="update-product" id="updateProductForm">
+        <form>
+          <h1 class="update-product__heading">Update product</h1>
+          <div class="form-group">
+            <label class="update-product__label">Product id</label>
+            <input class="update-product__input" type="text" class="form-control" id="productIdInput"  placeholder="Product id..">
+          </div>
+
+          <div class="form-group">
+            <label class="update-product__label">Update product name</label>
+            <input class="update-product__input" class="update-product__input" type="text" class="form-control" id="nameUpdateInput"  placeholder="Name..">
+          </div>
+
+          <div class="form-group">
+            <label class="update-product__label">Update price</label>
+            <input class="update-product__input" type="number" class="form-control" id="priceUpdateInput" placeholder="Price...">
+          </div>
+
+          <div class="form-group">
+              <label class="update-product__label">Update image</label>
+              <input class="update-product__input" type="text" class="form-control" id="ImgUrlUpdateInput" placeholder="Image url...">
+          </div>
+
+          <button type="submit" id="updateProduct" class="update-product__btn btn btn-primary">Update product</button>
+        </form>
+      </div>
+
+      <div class="delete-product" id="deleteProductForm">
+        <form>
+          <h1 class="delete-product__heading">Delete product</h1>
+          <div class="form-group">
+            <label class="delete-product__label">Product id</label>
+            <input class="delete-product__input" type="text" class="form-control" id="deleteProductIdInput"  placeholder="Product id..">
+          </div>
+
+          <button class="delete-product__btn" type="submit" id="deleteProduct">Delete product</button>
+        </form>
+      </div>
+
+      <div class="sign-up" id="signUpForm">
+        <form>
+          <h1 class="sign-up__heading">Sign up</h1>
+          <div class="form-group">
+            <label class="sign-up__label">Username</label>
+            <input class="sign-up__input" type="text" class="form-control" id="usernameInput"  placeholder="Username..">
+          </div>
+
+          <div class="form-group">
+            <label class="sign-up__label">Email</label>
+            <input class="sign-up__input" type="text" class="form-control" id="emailInput"  placeholder="Email..">
+          </div>
+
+          <div class="form-group">
+            <label class="sign-up__label">Password</label>
+            <input class="sign-up__input" type="text" class="form-control" id="passwordInput"  placeholder="Password..">
+          </div>
+
+          <button class="sign-up__btn" type="submit" id="signUp" class="btn btn-primary">Sign up</button>
+        </form>
+      </div>
+
+      <!-- bootstrap -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      <!-- jquery -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+      <!-- local -->
+      <script src="./js/index.js"></script>
+    </body>
+</html>

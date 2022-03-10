@@ -1,0 +1,52 @@
+@import 'variables';
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin p-text {
+    font-family: $text-font;
+    color: $text-colour;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+}
+
+@mixin light-p-text {
+    @include p-text;
+    color:  $light-text-colour;
+}
+
+@mixin btn {
+    @include p-text;
+    // color: white;
+    border-radius: 360px;
+    border: none;
+    background: white;
+    border: 1.5px solid #E478E0;
+    // background: #E478E0;
+    // background: -webkit-radial-gradient(circle farthest-corner at center center, #76cbe6 0%, #64a6f1 100%);
+    // background: -moz-radial-gradient(circle farthest-corner at center center, #76cbe6 0%, #64a6f1 100%);
+    // background: radial-gradient(circle farthest-corner at center center, #76cbe6 0%, #64a6f1 100%);
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+@mixin input {
+    width: 32rem;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    @include center;
+    @include p-text;
+    cursor: pointer;
+    background-color: $light-mist;
+    font-weight: lighter;
+    color: black !important;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}

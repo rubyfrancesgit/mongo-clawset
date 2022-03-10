@@ -1,0 +1,22 @@
+.delete-product {
+    display: none;
+    padding: 10rem;
+
+    &__heading {
+        @include p-text;
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    &__label {
+        @include p-text;
+    }
+
+    &__input {
+        @include input;
+    }
+
+    &__btn {
+        @include btn;
+    }
+}
